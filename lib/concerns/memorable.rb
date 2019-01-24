@@ -1,6 +1,6 @@
 module Memorable
   extend Artist::ClassMethods
-  module InstanceMethods
+  include Artist::InstanceMethods
   
    def self.reset_all
     self.all.clear
